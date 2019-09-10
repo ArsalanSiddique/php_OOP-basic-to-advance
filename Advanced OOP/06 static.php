@@ -75,15 +75,16 @@
     $dog = new Dog('Old Yeller');
 
     // Print the number of pets:
-    echo '<p>After creating a Dog, I now have ' . Pet::getCount() . ' pet(s .<p>';
+    echo '<p>After creating a Dog, I now have ' . Pet::getCount() . ' pet(s) .<p>';
 
     // Create a cat:
     $cat = new Cat('Bucky');
-    echo '<p>After creating a Cat, I now vhave ' . Pet::getCount() . ' pet(s).</p>';
+    echo '<p>After creating a Cat, I now have ' . Pet::getCount() . ' pet(s).</p>';
 
     // Create another pet:
     $ferret = new Ferret('Fungo');
     echo '<p>After creating a Ferret, I now have ' . Pet::getCount() . ' pet(s).</p>';
+    
     // Tragedy strikes!
     unset($dog);
     echo '<p>After tragedy strikes, I now have ' . Pet::getCount() . ' pet(s).</p>';
@@ -94,6 +95,7 @@
 
     // Delete the objects:
     unset($cat, $ferret, $pygmymarmoset);
+    echo '<p>After Killing (UNSET) all pets, I now have ' . Pet::getCount() . ' pet(s). </p>';
 
     ?>
 </body>
