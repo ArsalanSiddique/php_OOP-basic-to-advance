@@ -1,10 +1,10 @@
-<?php # Script 6.2 - Triangle.php
+<?php # Triangle.php
 /* This page defines the Triangle class.
  * The class contains two attributes:
  * - private $_sides (array)
  * - private $_perimeter (number)
  * The class contains three methods:
- * - _ _construct()
+ * - __construct()
  * - getArea()
  * - getPerimeter()
  */
